@@ -1,0 +1,2749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VS Tax Edge Consultancy</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+   background:#f8fcff;
+        padding-top:150px;
+    );
+    color:#333;
+@media(max-width:768px){
+    padding-top:120px;
+}
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+
+    background:
+    linear-gradient(rgba(10,26,63,0.92),
+    rgba(10,26,63,0.92)),
+    url("header-background.jpg") center/cover no-repeat;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 25px;
+    box-sizing:border-box;
+}
+.header-left{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+header img{
+    max-height:130px;
+    transition:all 0.4s ease;
+ 
+}
+ .header-left{
+    flex:1 0 auto;
+}
+
+.header-center,
+.header-text{
+    flex:2;
+ }
+.header-right{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align:right;
+}
+
+.contact-item{
+    color:#fff;
+    font-size:13px;
+    font-weight:500;
+    margin:8px 0;
+text-align:right;
+}
+
+.consult-btn{
+    background:#006400;
+    color:#ffffff;
+    border:none;
+    padding:8px 15px;
+    border-radius:25px;
+    font-weight:bold;
+    font-size:12px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.consult-btn:hover{
+    background:#e6c200;
+    transform:translateY(-2px);
+}
+ .contact-status{
+    background:#FFD700;
+    color:#0a1f44;
+    padding:4px 8px;
+    border-radius:15px;
+    font-size:11px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.header-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+}
+.header-text h1{
+    margin:0;
+    font-size:32px;
+    text-align:center;
+   font-weight:700;
+   color:#ffffff;
+    font-style: italic;
+}
+
+.header-text p{
+    margin:5px 0;
+    text-align:center;
+    width:100%;
+   font-size:16px;
+   font-weight:700;
+   color:#ffffff;
+}
+ 
+header.scrolled{
+    padding:8px 125px;
+}
+
+header.scrolled img{
+    max-height:50px;
+}
+
+header.scrolled .header-text h1{
+    font-size:22px;
+}
+
+/* Tablet */
+@media(max-width:992px){
+
+.header-left img{
+    max-height:100px;
+}
+
+.header-text h1{
+    font-size:22px;
+}
+
+.header-text p{
+    font-size:13px;
+    margin:2px 0;
+}
+.footer-nav{
+margin-top:5px;
+}
+.contact-item{
+    font-size:11px;
+}
+
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+header{
+    display:grid;
+    grid-template-columns:70px 1fr 90px;
+    gap:2px;
+    padding:10px;
+}
+
+.header-left{
+    flex:0 0 400px;
+}
+
+.header-left img{
+    max-height:80px;
+}
+
+.header-text h1{
+    font-size:22px;
+    line-height:1.2;
+   margin-bottom:2px;
+}
+
+.header-text p{
+    font-size:13px;
+    margin:2px 0;
+}
+
+.contact-item{
+    font-size:12px;
+    line-height:1.2;
+}
+
+.contact-status{
+    font-size:10px;
+    padding:3px 5px;
+}
+}
+
+header{
+    display:flex !important;
+    justify-content:space-between;
+    align-items:center;
+}
+    nav a {color:#FFFFFF; margin:0 15px; text-decoration:none; font-weight:bold;}
+    .hero{
+    background:
+    linear-gradient(rgba(10,31,68,0.65),
+    rgba(10,31,68,0.65)),
+    url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1920")
+    center center/cover no-repeat;
+
+    min-height:200px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    color:#fff;
+}
+
+.hero h1{
+    color:#fff;
+    font-size:42px;
+    margin-bottom:15px;
+    text-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+
+.hero p{
+    max-width:800px;
+    font-size:20px;
+    color:#fff;
+    text-shadow:1px 1px 6px rgba(0,0,0,0.6);
+}
+
+@media(max-width:768px){
+
+    .hero{
+        min-height:20vh;
+        padding:30px 15px;
+    }
+
+    .hero h1{
+        font-size:22px;
+        line-height:1.3;
+        margin-bottom:12px;
+    }
+
+    .hero p{
+        font-size:15px;
+        line-height:1.6;
+        max-width:100%;
+        margin-bottom:20px;
+    }
+
+    .cta{
+        width:90%;
+        max-width:180px;
+        font-size:15px;
+        padding:12px 20px;
+    }
+
+}
+``
+    .cta {background:#006400; color:#FFFFFF; padding:12px 25px; border:none; cursor:pointer; font-size:16px; border-radius:40px;}
+    .dropdown {display:none; margin:20px auto; max-width:500px;}
+    form {background:#F8fcfd; padding:40px; border:1px solid #ddd; border-radius:40px;}
+    input {width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:50px;}
+    button {background:#006400; color:#FFFFFF; padding:12px; border:none; cursor:pointer; font-size:16px; border-radius:50px;}
+    button:hover {background:#e6c200;}
+    .services {padding:40px 20px; text-align:center;}
+    .service-list {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
+select {
+    width:105%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:50px;
+}
+.booking-popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    z-index:999999;
+    justify-content:center;
+    align-items:center;
+}
+
+.booking-popup-content{
+    background:#fff;
+    width:90%;
+    max-width:600px;
+    max-height:90vh;
+    overflow-y:auto;
+    padding:30px;
+    border-radius:20px;
+    position:relative;
+    animation:popupZoom .3s ease;
+}
+
+.popup-close{
+    position:absolute;
+    right:20px;
+    top:10px;
+    font-size:30px;
+    cursor:pointer;
+    color:red;
+}
+
+/* Sections */
+
+section{
+padding:20px 4%;
+}
+
+.section-title{
+    display:inline-block;
+    background:#ffffff;
+    padding:15px 35px;
+    border-radius:20px;
+    border:1px solid #e5e7eb;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    color:#0a1f44;
+    font-size:24px;
+    transition:all .4s ease;
+    margin:0 auto 20px auto;
+}
+
+#about,
+#about .section-title,
+section{
+    text-align:center;
+}
+
+.section-title:hover{
+    transform:translateY(-5px);
+    border-color:#FFD700;
+    box-shadow:0 15px 35px rgba(10,31,68,.18);
+}
+``
+
+.section-subtitle{
+text-align:center;
+margin-bottom:40px;
+color:#666;
+font-size:18px;
+}
+
+/* Why Us */
+ 
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+background:#f8fcff;
+
+}
+
+.feature-box{
+    background:#f8fcff;
+    padding:20px;
+    text-align:center;
+    border-radius:20px;
+    border:1px solid #ccc;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+
+    transition:all 0.4s ease;
+    cursor:pointer;
+    position:relative;
+    overflow:hidden;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 15px 35px rgba(10,31,68,0.18);
+    border-color:#FFD700;
+}
+
+.feature-box:hover h3{
+    color:#0a1f44;
+}
+
+.feature-box:hover i{
+    transform:scale(1.2) rotate(8deg);
+    color:#FFD700;
+}
+
+.feature-box i{
+    transition:all 0.4s ease;
+}
+.feature-box:hover i{
+    animation:bounceIcon 0.8s ease;
+}
+
+@keyframes bounceIcon{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-10px) scale(1.2);
+    }
+}
+
+/* About */
+
+.about{
+background:#f8fcff;
+text-align:center;
+border-radius:40px;
+border:1px solid #ccc;
+padding:80px;
+position:relative;
+transition:all 0.4s ease;
+cursor:pointer;
+}
+.about:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(10,31,68,0.15);
+border-color:#FFD700
+}
+.about p{
+max-width:2000px;
+margin:auto;
+font-size:16px;
+line-height:1.8;
+text-align: justify;
+transition:all 0.4s ease;
+}
+about:hover p{
+color:#222;
+}
+
+.about h2,
+.about h3{
+    transition:all 0.4s ease;
+}
+
+.about:hover h2{
+    color:#FFD700;
+}
+
+.about:hover h3{
+    color:#0a1f44;
+    letter-spacing:1px;
+}
+
+/* Testimonials */
+.testimonials {
+  background:#f8fcff;
+  color:#333;
+  text-align:center;
+  border-radius:80px;
+  padding:60px 40px;
+}
+.testimonials h2 {
+  font-size:22px;
+  color:#0a1f44;
+  margin-bottom:30px;
+ border-radius:80px;
+ display:inline-block;
+    background:#ffffff;
+    padding:15px 35px;
+    border-radius:20px;
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    color:#0a1f44;
+    position:relative;
+    transition:all .4s ease;
+    margin-bottom:20px;
+}
+
+.testimonials h2:hover{
+    transform:translateY(-5px);
+    border-color:#FFD700;
+    box-shadow:0 15px 35px rgba(10,31,68,.18);
+}
+
+
+
+}
+.testimonial {
+  background:#f8fcff;
+  border-radius:80px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  padding:25px;
+  font-size:16px;
+  margin:20px auto;
+  max-width:700px;
+  font-style:italic;
+}
+.testimonial span {
+  display:block;
+  margin-top:15px;
+  font-weight:bold;
+ border-radius:80px;
+  color:#0a1f44;
+}
+/* Testimonials Hover Effects */
+.testimonial {
+  background:#f8fcff;
+  border-radius:8px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.1);
+  padding:25px;
+  margin:20px auto;
+  max-width:700px;
+  font-style:italic;
+  transition:transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  border:2px solid transparent;
+}
+
+.testimonial:hover {
+  transform:scale(1.03); /* subtle zoom */
+  box-shadow:0 6px 16px rgba(0,0,0,0.2);
+  border:2px solid #f1c40f; /* gold border highlight */
+}
+
+    /* Services */
+    .services { padding:40px 60px; text-align:center;}
+    .services h2 { font-size:24px; color:#0a1f44; margin-bottom:10px;display:inline-block;
+    background:#ffffff;
+    padding:15px 35px;
+    border-radius:20px;
+    border:1px solid #e5e7eb;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+    color:#0a1f44;
+    position:relative;
+    transition:all .4s ease;
+    margin-bottom:20px;
+}
+
+.services h2:hover{
+    transform:translateY(-5px);
+    border-color:#FFD700;
+    box-shadow:0 15px 35px rgba(10,31,68,.18);
+}
+ 
+.services > p{
+    max-width:1000px;
+    margin:auto;
+    font-size:16px;
+    line-height:1.8;
+    text-align:justify;
+    color:#666;
+}
+
+    .service-grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+      gap:20px; align-items:stretch;
+    }
+
+/* Large Desktop */
+@media (min-width:1400px){
+    .service-grid{
+        grid-template-columns:repeat(auto-fit,minmax(450px,1fr));;
+    }
+}
+
+/* Laptop */
+@media (max-width:1399px){
+    .service-grid{
+        grid-template-columns:repeat(3,1fr);
+        gap:20px;
+    }
+
+    .card-text h3{
+        font-size:20px;
+    }
+
+    .card-text p{
+        font-size:14px;
+    }
+}
+
+/* Tablet */
+@media (max-width:992px){
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-card img.icon{
+        height:180px;
+    }
+}
+
+
+.service-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    min-height:280px;
+    max-width:420px:
+    
+    transition:all .3s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,0,0,0.18);
+}
+
+.service-card img.icon{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    display:block;
+    margin:0;
+    border-radius:0;
+}
+
+.card-text{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+     gap:15px;
+}
+
+.card-text h3{
+    color:#0a1f44;
+    font-size:22px;
+    margin-bottom:-10px;
+    min-height:-10px;
+}
+
+.card-text p{
+    color:#666;
+    min-height:10px;
+    line-height:1.5;
+    flex-grow:1;
+    margin-bottom:-10px;
+}
+
+.card-text button{
+    width:100%;
+    background:#0a1f44;
+    color:#fff;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    font-weight:600;
+    margin-top:auto;
+    cursor:pointer;
+}
+
+.card-text button:hover{
+    background:#163d78;
+}
+ 
+.service-popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.75);
+    z-index:99999;
+
+    justify-content:center;
+    align-items:center;
+
+    padding:15px;
+    overflow-y:auto;
+}
+
+.service-popup-content{
+    background:#fff;
+    width:90%;
+    max-width:750px;
+
+    max-height:90vh;
+    overflow-y:auto;
+
+    padding:30px;
+    border-radius:25px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    -webkit-overflow-scrolling:touch;
+}
+
+.service-popup-content h2{
+    color:#0a1f44;
+    margin-bottom:15px;
+}
+
+.service-popup-content p{
+    color:#555;
+    line-height:1.8;
+}
+
+.service-close{
+    float:right;
+    font-size:30px;
+    cursor:pointer;
+    color:red;
+}
+
+
+
+
+
+@keyframes popupZoom{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+@media (max-width:768px){
+
+.service-grid{
+grid-template-columns:1fr;
+}
+    .service-popup{
+        padding:10px;
+        align-items:flex-start;
+    }
+
+    .service-popup-content{
+        width:100%;
+        max-height:95vh;
+
+        padding:20px;
+        margin-top:10px;
+        border-radius:12px;
+    }
+ 
+@media(max-width:992px){
+
+    .service-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .service-card img.icon{
+        height:180px;
+    }
+
+    .card-text h3{
+        font-size:18px;
+        min-height:auto;
+    }
+
+    .service-card{
+        min-height:auto;
+    }
+
+}
+    .service-popup-content h2{
+        font-size:22px;
+        padding-right:30px;
+    }
+
+    .popup-section h4{
+        font-size:16px;
+    }
+
+    .popup-section li,
+    .popup-section p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .popup-buttons{
+        flex-direction:column;
+    }
+
+    .contact-btn,
+    .whatsapp-btn{
+        width:100%;
+        text-align:center;
+        box-sizing:border-box;
+    }
+}
+.service-close{
+    position:sticky;
+    top:0;
+    float:right;
+    font-size:30px;
+    color:red;
+    cursor:pointer;
+    z-index:10;
+}
+
+      .main-container{
+    display:flex;
+    gap:40px;
+    padding:2px 1%;
+    align-items:flex-start;
+    flex-wrap:wrap;
+}
+
+.sidebar-toggle{
+    display:none;
+}
+
+.content-area{
+    flex:1;
+}
+@media(max-width:768px){
+
+    .service-card img.icon{
+        height:180px;
+    }
+
+    .card-text{
+        padding:15px;
+    }
+
+    .card-text h3{
+        font-size:18px;
+    }
+
+    .card-text p{
+        font-size:14px;
+    }
+
+}
+/* Sidebar */
+.left-sidebar{
+    width:320px;
+    background:#f8fcff;
+    padding:10px;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
+    position:sticky;
+    top:150px;
+    height:fit-content;
+
+    animation:floating 4s ease-in-out infinite;
+}
+.si*ebar-section{
+    margin-bottom:30*x;
+}
+/* News Ticker Effect */
+.news-scroll{
+    height:400px;   /* apni requirement ke hisab se */
+    overflow:hidden;
+    position:relative;
+ 
+}
+
+.news-scroll-content{
+    display:flex;
+    flex-direction:column;
+    animation:scrollNews 35s linear infinite;
+}
+
+.news-scroll:hover .news-scroll-content{
+    animation-play-state:paused;
+}
+
+@keyframes scrollNews{
+    0%{
+        transform:translateY(100%);
+    }
+    100%{
+        transform:translateY(-100%);
+    }
+}
+.sidebar-section h3{
+    color:#0a1f44;
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:20px;
+    position:relative;
+    padding-bottom:12px;
+}
+
+/* Main Underline */
+.sidebar-section h3::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:110%;
+    height:3px;
+    background:#f8fcff;
+    border-radius:10px;
+}
+
+/* Small Accent Line */
+.sidebar-section h3::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-2px;
+    width:250px;
+    height:6px;
+    background:#0a1f44;
+    border-radius:20px;
+    z-index:1;
+}
+
+.sidebar-ite*{
+    padding:14px 0;
+   *border-bottom*1px solid #e5e5e5;
+*   display:flex;
+    flex-directio*:column;
+    gap*5px;
+    font-size:15px;
+    color*#333;
+}
+
+ 
+.sidebar-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px solid #e5e5e5;
+    gap:10px;
+}
+
+.sidebar-text{
+    flex:1;
+    font-size:14px;
+    line-height:1.4;
+}
+
+    /* Animation */
+    animation: slideFadeIn 0.8s ease forwards;
+    opacity:0;
+    transition:all 0.3s ease;
+}
+
+/* Hover Effect */
+.sidebar-item:hover{
+    transform:translateX(8px);
+    color:#062b63;
+    background:#f8f9fa;
+    border-radius:6px;
+    padding-left:10px;
+}
+.sidebar-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-weight:600;
+    cursor:pointer;
+}
+
+
+.sidebar-details{
+    max-height:0;
+    overflow:hidden;
+    opacity:0;
+    margin-top:0;
+    color:#666;
+    font-size:14px;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.4s ease,
+        margin-top 0.4s ease;
+}
+
+.sidebar-item.active .sidebar-details{
+    max-height:200px;
+    opacity:1;
+    margin-top:10px;
+}
+
+.sidebar-item.active .plus{
+    transform:rotate(45deg);
+}
+/* NEW Text Animation */
+.sidebar-item
+
+}
+@*edia*max-width:768px){
+
+    .main-conta*ner{
+        flex-direction:column*
+    }
+
+    .left-sidebar{
+       *width:100%;
+        position:stati*;
+    }
+} 
+.sidebar-item small{
+    animation:blink 1s infinite;
+    color:red;
+    font-weight:bold;
+}
+/* Slide In Animation */
+@keyframes slideFadeIn{
+    from{
+        opacity:0;
+        transform:translateX(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* Blinking NEW Badge */
+@keyframes blink{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.3;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+/* Sidebar Floating Effect */
+@keyframes floating{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-5px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+.sidebar-toggle{
+    display:none;   
+    width:100%;
+    padding:12px;
+    background:#0a1f44;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .sidebar-toggle{
+        display:block;
+    }
+
+    .left-sidebar{
+        display:none;
+        width:100%;
+        position:static;
+        margin-bottom:20px;
+    }
+
+    .left-sidebar.show{
+        display:block;
+        animation:mobileSlide 0.4s ease;
+    }
+}
+@keyframes mobileSlide{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+
+    justify-content:center;
+    align-items:center;
+}
+
+.modal-content{
+    background:white;
+    width:90%;
+    max-width:500px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+
+    animation:popupAnimation .3s ease;
+}
+
+.modal-content h2{
+    color:#0a1f44;
+    margin-bottom:15px;
+}
+
+.modal-content p{
+    color:#555;
+    line-height:1.6;
+}
+
+.close-btn{
+    float:right;
+    font-size:28px;
+    cursor:pointer;
+    color:red;
+}
+
+@keyframes popupAnimation{
+    from{
+        transform:scale(0.7);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+.animated-service{
+    color:#ffd700;
+    font-size:18px;
+    font-weight:bold;
+    min-height:25px;
+}
+
+.animated-service::after{
+    content:"";
+    animation:cursorBlink 0.8s infinite;
+}
+
+@keyframes cursorBlink{
+    50%{
+        opacity:0;
+    }
+}
+.help-section{
+    background:#f8f9ff;
+    padding:15px;
+    border-radius:12px;
+    margin-bottom:25px;
+    border:1px solid #e0e8ff;
+}
+
+.help-section video{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+}
+
+.help-text{
+    margin-top:10px;
+    font-size:13px;
+    color:#555;
+    text-align:center;
+}
+
+.help-section:hover{
+    transform:translateY(-3px);
+    transition:0.3s;
+}
+
+/* Header Menu */
+.main-nav {
+    margin-top: 20px;
+}
+
+.main-nav a {
+    color: #FFD700 !important;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.main-nav a:hover {
+    color: #FFFFFF !important;
+}
+
+/* Footer Menu */
+.footer-nav{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:0px;
+    margin-top:5px;
+}
+
+.footer-nav a {
+    color: #FFD700 !important;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 12px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.footer-nav a:hover {
+    color: #FFFFFF !important;
+}
+
+/* Force visibility if another CSS overrides */
+header a,
+footer a {
+    color: #FFD700 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.gallery-tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:20px 0;
+}
+
+.tab-btn{
+    background:#0a1f44;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:10px 15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.tab-btn.active{
+    background:#f1c40f;
+    color:#0a1f44;
+}
+
+.tab-content{
+    display:none;
+}
+
+.tab-content.active{
+    display:block;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+    column-gap:10px;
+    row-gap:10px;
+}
+.gallery-item img{
+    width:50%;
+    height:110px;
+    object-fit:cover;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.gallery-item img:hover{
+    transform:scale(1.05);
+}
+
+.gallery-item iframe{
+    width:100%;
+    height:220px;
+    border:none;
+    border-radius:10px;
+}
+
+.gallery-item{
+    text-align:center;
+    padding:1px;
+}
+
+.gallery-item p{
+    margin-top:10px;
+    font-weight:bold;
+}
+
+.imageModal{
+    display:none;
+    position:fixed;
+    z-index:99999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.9);
+}
+
+.imageModal img{
+    max-width:90%;
+    max-height:90%;
+    display:block;
+    margin:auto;
+    margin-top:2%;
+}
+.media-gallery-header{
+    background: linear-gradient(135deg,#062b63,#0a1f44,#123b7a);
+    color:#fff;
+    padding:18px 20px;
+    border-radius:12px;
+    text-align:center;
+    cursor:pointer;
+    margin-bottom:20px;
+    box-shadow:0 6px 20px rgba(10,31,68,0.35);
+    transition:all 0.3s ease;
+    border:2px solid #FFD700;
+}
+/* Responsive Media Gallery Header */
+
+@media (max-width: 768px){
+
+    .media-gallery-header{
+        padding:15px;
+        border-radius:10px;
+        margin-bottom:15px;
+    }
+
+    .media-gallery-header h3{
+        font-size:18px;
+        line-height:1.4;
+    }
+
+    .media-gallery-header p{
+        font-size:12px;
+        line-height:1.5;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .media-gallery-header{
+        padding:12px;
+    }
+
+    .media-gallery-header h3{
+        font-size:16px;
+    }
+
+    .media-gallery-header p{
+        font-size:11px;
+    }
+
+}
+.media-gallery-header h3{
+    margin:0;
+    font-size:22px;
+    color:#FFD700;
+    letter-spacing:1px;
+}
+
+.media-gallery-header p{
+    margin:6px 0 0;
+    font-size:13px;
+    color:#ffffff;
+}
+
+.media-gallery-header:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(10,31,68,0.5);
+}
+
+/* Modern Footer */
+
+.custom-footer{
+    background:#163d78;
+    color:#fff;
+    padding:20px 4% 20px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:50px;
+}
+
+.footer-logo{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-bottom:20px;
+}
+
+.footer-logo img{
+    width:165px;
+    height:165px;
+    object-fit:contain;
+}
+
+.footer-logo h3{
+    margin:0;
+    font-size:18px;
+}
+
+.footer-logo span{
+    color:#c9d3e8;
+    letter-spacing:2px;
+    font-size:12px;
+}
+
+.footer-desc{
+    color:#dfe7f3;
+    line-height:1.8;
+}
+
+.footer-col h4{
+    margin-bottom:25px;
+    color:#fff;
+    letter-spacing:1px;
+    font-size:18px;
+}
+
+.footer-col ul{
+    list-style:none;
+    padding:0;
+}
+
+.footer-col ul li{
+    margin-bottom:10px;
+   font color:#c9d3e8;
+   font-size:14px;
+}
+
+.footer-col ul li a{
+    color:#dfe7f3;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.footer-col ul li a:hover{
+    color:#FFD700;
+}
+
+.footer-bottom{
+    margin-top:30px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding-top:20px;
+    font-size:14px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    margin:10px 0;
+    color:#dfe7f3;
+}
+
+.copyright{
+    color:#FFD700;
+    font-weight:600;
+}
+
+/* Footer Responsive */
+
+@media (max-width: 992px){
+
+    .footer-container{
+        grid-template-columns: repeat(2,1fr);
+        gap:30px;
+    }
+
+    .footer-logo img{
+        width:120px;
+        height:120px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .custom-footer{
+        padding:40px 20px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:25px;
+        text-align:center;
+    }
+
+    .footer-logo{
+        justify-content:center;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .footer-logo img{
+        width:90px;
+        height:90px;
+    }
+
+    .footer-col h4{
+        margin-bottom:15px;
+        font-size:18px;
+    }
+
+    .footer-col ul{
+        padding:0;
+        margin:0;
+    }
+
+    .footer-col ul li{
+        margin-bottom:10px;
+        line-height:1.7;
+    }
+
+    .footer-bottom{
+        margin-top:20px;
+        padding-top:15px;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .footer-logo h3{
+        font-size:22px;
+    }
+
+    .footer-logo span{
+        font-size:11px;
+    }
+
+    .footer-col h4{
+        font-size:16px;
+        letter-spacing:2px;
+    }
+
+    .footer-col ul li,
+    .footer-col p{
+        font-size:14px;
+    }
+
+    .footer-bottom p{
+        font-size:12px;
+        line-height:1.6;
+    }
+
+}
+
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active{
+    text-decoration:none !important;
+}
+
+/* Base header */
+#main-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: navy;
+  color: #FFD700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 999;
+}
+
+.logo-area img {
+  height: 40px;
+}
+
+.company-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hamburger icon hidden by default */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color:#ffffff;
+}
+.menu-toggle{
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu-toggle:hover{
+    color:#FFD700;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide links on small screens */
+    flex-direction: column;
+    background: navy;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    border-bottom: 1px solid #FFD700;
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger icon */
+  }
+
+  .nav-links.active {
+    display: flex; /* show menu when active */
+  }
+}
+/* Desktop */
+.footer-nav {
+  display: flex;
+}
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  @media (max-width:768px){
+
+    .footer-nav{
+        position:absolute;
+        top:100%;
+        right:10px;
+
+        width:220px;
+
+        display:flex;
+        flex-direction:column;
+
+        background:#0a1f44;
+        border:2px solid #FFD700;
+        border-radius:12px;
+
+        box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+        overflow:hidden;
+
+        max-height:0;
+        opacity:0;
+
+        transition:
+        max-height .4s ease,
+        opacity .4s ease;
+
+        z-index:99999;
+    }
+
+    .footer-nav.active{
+        max-height:400px;
+        opacity:1;
+    }
+
+    .footer-nav a{
+        padding:12px 15px;
+        border-bottom:1px solid rgba(255,255,255,.1);
+        text-align:left;
+    }
+
+    .footer-nav a:last-child{
+        border-bottom:none;
+    }
+}
+
+
+  .footer-nav a {
+    padding: 10px;
+    border-bottom: 1px solid #FFD700;
+    color: #FFD700;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger icon */
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .footer-nav.active {
+    max-height: 500px; /* enough height to show all links */
+  }
+}
+/* Laptop */
+@media(max-width:1400px){
+
+.header-left img{
+    max-height:120px;
+}
+
+.header-text h1{
+    font-size:26px;
+}
+
+.contact-item{
+    font-size:12px;
+}
+
+}
+ @media(max-width:768px){
+
+    /* Contact section hide */
+    .header-right{
+        display:none !important;
+    }
+
+    header{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        gap:12px;
+        padding:10px 12px;
+    }
+
+    /* Logo */
+    .header-left{
+        flex:0 0 70px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .header-left img{
+        max-height:65px;
+        width:auto;
+        display:block;
+    }
+
+    /* Company Info */
+    .header-text{
+        flex:1;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+    }
+
+    .header-text h1{
+        font-size:26px;
+        margin:0;
+        line-height:1.15;
+        color:#fff;
+    }
+
+    .header-text p{
+        margin:4px 0;
+        font-size:14px;
+        line-height:1.3;
+    }
+
+    /* Navigation */
+    .footer-nav{
+        width:100%;
+        justify-content:center;
+        margin-top:5px;
+        gap:10px;
+    }
+
+    .footer-nav a{
+        font-size:12px;
+    }
+}
+  </style>
+</head>
+<body>
+
+
+  
+<header id="mainHeader">
+
+  <!-- Left side: Logo + Text -->
+  <div class="header-left">
+    <img src="vs-logo.png" alt=".">
+    <div class="header-text">
+      <h1>VS Tax Edge Consultancy LLP.</h1>
+      <p>Smart Tax Solutions, Sharp Financial Edge.</p>
+      <p id="animatedText" class="animated-service"></p>
+   
+  <!-- Navigation links -->
+  <nav class="footer-nav" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
+  </nav>
+ <div class="menu-toggle" id="menuToggle">&#9776;</div>
+ </div>
+  </div>
+  <!-- Hamburger icon (mobile only) -->
+  
+
+  <!-- Right side: Contact info -->
+  <div class="header-right">
+    <div class="contact-status">Contact Info</div>
+    <div class="contact-card">
+      <div class="contact-item">📞 7011490680</div>
+      <div class="contact-item">✉ contact@vstaxedge.com , vs@vstaxedge.com</div>
+      <div class="contact-item">🌐 www.vstaxedge.com</div>
+    </div>
+  </div>
+
+</header>
+ 
+
+<section class="hero" id="home">
+  <h1>Your Edge in Tax & GST Solutions</h1>
+  <p>Helping businesses and individuals achieve better planning, better savings, and a better tomorrow.</p>
+  <button class="cta" onclick="openBookingPopup()">
+    Book a Consultation
+</button>
+</section>
+
+<!-- Dropdown Booking Form -->
+
+<div id="bookingPopup" class="booking-popup">
+<div class="booking-popup-content">
+
+<span class="popup-close" onclick="closeBookingPopup()">
+&times;
+</span>
+
+<h2>📅 Book a Consultation</h2>
+
+<form id="bookingForm">
+
+<label>👤 Your Name</label>
+<input type="text" id="name" required>
+
+<label>📅 Select Date</label>
+<input type="date" id="date" required>
+
+<label>⏰ Select Time</label>
+<input type="time" id="time" required>
+
+<label>🛠 Select Service</label>
+<select id="service" required>
+<option value="">Choose Service</option>
+<option>GST Registration & Compliance</option>
+<option>GST Return Filing & GST Advisory</option>
+<option>Income Tax Consultation</option>
+<option>Corporate Tax Planning</option>
+<option>Compliance & Audit Support</option>
+<option>Business Advisory</option>
+<option>Litigation Compliance</option>
+<option>Accounting & Bookkeeping</option>
+<option>Tax Notice Assistance</option>
+</select>
+
+<label>📍 Location</label>
+<input type="text" id="location" required>
+
+<label>💬 Message</label>
+<input type="text" id="Message" required>
+
+<button type="submit">
+✅ Confirm Booking
+</button>
+
+</form>
+</div>
+</div>
+
+</section>
+
+<div class="main-container">
+
+    <!-- Mobile Toggle Button -->
+    <button class="sidebar-toggle" onclick="toggleMobileSidebar()">
+        ☰ Important Dates & Announcements
+    </button>
+
+    <!-- Left Sidebar -->
+    <aside class="left-sidebar">
+
+
+<div class="media-gallery-header" onclick="openGallery()">
+    <h3>🎥 MEDIA GALLERY</h3>
+    <p>Photos • Videos • GST Updates • Success Stories</p>
+</div>
+ 
+ 
+<!-- Get Help Section -->
+<div class="sidebar-section help-section">
+    <h3>🎥 Get Help</h3>
+
+  <video width="100%" controls>
+help-video.mp4="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+    <p class="help-text">
+        Watch this video for GST, Income Tax and Consultation guidance.
+    </p>
+</div>
+
+     <div class="sidebar-section">
+   <h3>📢 Latest Updates</h3>
+
+   <div class="news-scroll">
+      <div class="news-scroll-content">
+
+         <div class="sidebar-item">
+            <span>✅ New GST compliance guidelines issued</span>
+            <small>NEW</small>
+         </div>
+
+         <div class="sidebar-item">
+            <span>⏰ Advance Tax Due - 15 Aug 2025</span>
+            <small>NEW</small>
+         </div>
+
+         <div class="sidebar-item">
+            <span>📝 TDS Return Submission - 31 Aug 2025</span>
+            <small>NEW</small>
+         </div>
+
+         <div class="sidebar-item">
+            <span>📌 GST Return Filing - 10 Aug 2026</span>
+            <small>NEW</small>
+         </div>
+
+      </div>
+   </div>
+</div>
+
+    </aside>
+
+    <!-- Main Content Starts -->
+    <div class="content-area">
+   
+<!-- WHY CHOOSE US -->
+
+<section>
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<p class="section-subtitle">
+Trusted Tax & Financial Experts
+</p>
+
+<div class="features">
+
+<div class="feature-box">
+<i class="fas fa-award"></i>
+<h3>Experienced Professionals</h3>
+<p>Expert tax solutions for individuals and businesses.</p>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-users"></i>
+<h3>Client Focused</h3>
+<p>Personalized service and dedicated support.</p>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-clock"></i>
+<h3>Timely Delivery</h3>
+<p>Fast reporting, filing and compliance management.</p>
+</div>
+
+<div class="feature-box">
+<i class="fas fa-users"></i>
+<h3>Transparent Communication</h3>
+<p>Clear scope, clear fees, clear status updates — always in plain language.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+<h2 class="section-title">About Us</h2>
+<h3>A consultancy built around clarity, compliance and confidence.</h3>
+
+<p>
+VS Tax Edge Consultancy provides professional taxation,
+GST registration and filing, income tax return filing,
+corporate compliance, accounting, bookkeeping,
+audit support and strategic business advisory services
+for startups, SMEs and growing enterprises.VS Tax Edge Consultancy LLP provides end-to-end tax, GST, accounting and financial advisory support to businesses and individuals. From registrations and monthly returns to planning, audit support and litigation compliance, we translate complex regulation into simple, actionable decisions for your business.
+</p>
+
+</section>
+
+
+<section class="services" id="services">
+
+  <h2>Our Services</h2>
+  <p>Expert Tax & Financial Solutions Tailored to Your Needs. Complete tax, GST and financial services under one roof. Choose a single service or a fully managed compliance retainer — each engagement is scoped to your business size and sector</p>
+  
+  <div class="service-grid">
+    <div class="service-card">
+      <img src="gst registration.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>GST Registration & Compliance</h3>
+        <p>New registrations, amendments and ongoing GST compliance handled end to end.</p>
+        <button onclick="openServicePopup(
+'GST Registration & Compliance',
+'We provide GST Registration, GST Return Filing, Input Tax Credit assistance, Annual Return filing, GST notices handling, reconciliation services and complete compliance support for businesses of all sizes.'
+)">
+Learn More
+</button>
+      </div>
+    </div>
+
+<div class="service-card">
+      <img src="bookkeeping.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>GST Return Filing & GST Advisory</h3>
+        <p>Accurate GSTR-1, 3B and annual returns, every cycle. Classification, input credit and transaction structuring opinions you can act on.</p>
+        <button onclick="openServicePopup(
+'GST Return Filing & GST Advisory',
+'Managing GST compliance can be complex and time-consuming. Our experts ensure timely GST return filing, compliance management, and strategic advisory support so that your business remains fully compliant while minimizing risks and avoiding penalties.'
+)">
+Learn More
+</button>
+
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="income tax.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>Income Tax Consultation</h3>
+        <p>Expert guidance on income tax planning, ITR filing, tax savings, compliance, and notice management for individuals and businesses.</p>
+        <button onclick="openServicePopup(
+'Income Tax Consultation',
+'Professional income tax planning, ITR filing, tax saving strategies, notice handling, capital gain taxation and advisory services for salaried individuals, professionals and businesses.'
+)">
+Learn More
+</button>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="corporate.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>Corporate Tax Planning</h3>
+        <p>Reduce tax liabilities legally through smart planning, deductions, exemptions and efficient corporate tax strategies.</p>
+                  <button onclick="openServicePopup(
+'Corporate Tax Planning',
+'Corporate Tax Planning helps businesses legally reduce their tax burden through effective tax strategies, deductions, exemptions, and compliance management. Our experts analyze your business structure and financial operations to maximize tax efficiency while ensuring full compliance with applicable tax laws '
+)">
+Learn More
+</button>   
+
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="compliance.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>Compliance & Audit Support</h3>
+        <p>Professional compliance and audit support services to ensure regulatory adherence, reduce business risks and maintain smooth operations.</p>
+                <button onclick="openServicePopup(
+'Compliance & Audit Support',
+'Compliance & Audit Support services help businesses maintain regulatory compliance, prepare for audits, and minimize operational risks. At VS Tax Edge Consultancy, we provide comprehensive compliance management and audit assistance to ensure your business remains secure, compliant, and growth-focused. ✅📊🏢.'
+)">
+Learn More
+</button>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="bus.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>Business Advisory</h3>
+        <p>Growth strategies for startups and SMEs.Customized business solutions focused on growth planning, financial performance, operational excellence and risk management.</p>
+        <button onclick="openServicePopup(
+'Business Advisory',
+'Business Advisory services provide expert guidance to help businesses improve performance, increase profitability, manage risks, and achieve sustainable growth. At VS Tax Edge Consultancy, we partner with businesses to develop practical strategies and solutions that drive long-term success and value creation. 🚀📈🏢.'
+)">
+Learn More
+</button>
+
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="gavel.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>Litigation Compliance</h3>
+        <p>Comprehensive litigation and compliance support for GST, income tax and regulatory proceedings with practical resolution strategies.</p>
+        <button onclick="openServicePopup(
+'Litigation Compliance',
+'Litigation & Compliance Support provides professional assistance in handling tax notices, assessments, appeals, disputes, and regulatory compliance requirements. At VS Tax Edge Consultancy, we help businesses navigate complex legal and compliance matters while ensuring timely and effective resolution of issues.'
+)">
+Learn More
+</button>
+
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="bookkeeping.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>Accounting & Bookkeeping</h3>
+        <p>Professional accounting and bookkeeping services to ensure accurate records, better financial control and regulatory compliance.</p>
+        <button onclick="openServicePopup(
+'Accounting & Bookkeeping',
+'Accounting & Bookkeeping services ensure accurate financial records, efficient transaction management, and timely financial reporting. At VS Tax Edge Consultancy, we help businesses maintain organized accounts, improve financial control, and stay compliant with regulatory requirements.Maintain accurate financial records and gain complete visibility into your business finances with our professional Accounting & Bookkeeping services. We handle day-to-day accounting, reconciliations, reporting, and compliance so you can focus on growing your business. 📊📚✅.'
+)">
+Learn More
+</button>
+
+      </div>
+    </div>
+
+<div class="service-card">
+      <img src="taxnotice.png" alt="." class="icon">
+      <div class="card-text">
+        <h3>Tax Notice Assistance</h3>
+        <p>Timely and accurate assistance for tax notices, assessments and regulatory communications to protect your business interests.</p>
+        <button onclick="openServicePopup(
+'Tax Notice Assistance',
+'Receiving a tax notice can be stressful, but timely and accurate response is crucial to avoid penalties and legal complications. Our experienced tax professionals provide end-to-end assistance in understanding, preparing, and responding to notices issued by Income Tax, GST, and other regulatory authorities.'
+)">
+Learn More
+</button>
+
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<section class="testimonials"  id="testimonials">
+  <h2>Testimonials</h2>
+  <div class="testimonial">
+    <p>"VS Tax Edge helped streamline our GST filings — professional and reliable!"</p>
+    <span>- Client A</span>
+  </div>
+  <div class="testimonial">
+    <p>"Excellent advisory support that guided our startup through compliance challenges."</p>
+    <span>- Client B</span>
+  </div>
+</section>
+</div>
+</div>
+
+<div id="servicePopup" class="service-popup">
+    <div class="service-popup-content">
+        <span class="service-close" onclick="closeServicePopup()">&times;</span>
+
+        <h2 id="serviceTitle"></h2>
+
+        <p id="serviceDescription"></p>
+
+        
+            <button
+    onclick="openConsultation()"
+    style="
+        background:#0a1f44;
+        color:white;
+        margin-top:15px;
+        border-radius:8px;
+        padding:12px 20px;
+        cursor:pointer;
+    ">
+    📞 Contact Us
+</button>
+        </a>
+    </div>
+</div>
+<footer>
+ <footer class="custom-footer" id="contact">
+    <div class="footer-container">
+
+        <!-- Company -->
+        <div class="footer-col">
+            <div class="footer-logo">
+                <img src="vs-logo.png">
+                <div>
+                    <h3>VS Tax Edge</h3>
+                    <span>CONSULTANCY LLP</span>
+                </div>
+            </div>
+
+            <p class="footer-desc">
+                Smart Tax Solutions, Sharp Financial Edge.
+            </p>
+        </div>
+    
+      
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+            <h4>QUICK LINKS</h4>
+            <ul>
+     
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                 <li><a href="#blog">Blog</a><li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+<div class="footer-col">
+    <h4>SERVICES</h4>
+
+    <ul class="footer-list">
+        <li><a href="#services">GST Registration & Compliance</a></li>
+        <li><a href="#services">GST Return Filing & GST Advisory</a></li>
+        <li><a href="#services">Income Tax Consultation</a></li>
+        <li><a href="#services">Corporate Tax Planning</a></li>
+        <li><a href="#services">Compliance & Audit Support</a></li>
+        <li><a href="#services">Business Advisory</a></li>
+        <li><a href="#services">Accounting & Bookkeeping</a></li>
+        <li><a href="#services">Tax Notice Assistance</a></li>
+        <li><a href="#services">Litigation Compliance       <li><servicesTax Notice Assistance</a></li>
+    </ul>
+</div>
+
+               <!-- Contact -->
+        <div class="footer-col">
+            <h4>CONTACT</h4>
+            <ul>
+                <li>📞 7011490680</li>
+                <li>✉️ contact@vstaxedge.com</li>
+                <li>✉️ vs@vstaxedge.com</li>
+                <li>📍 C-2318, PRPC, Panipat, Haryana</li>
+                <li>🕒 Mon-Sat: 10 AM - 7 PM</li>
+                <li>🕒 Sunday & Holiday: Closed</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>
+            <strong>Disclaimer:</strong>
+            The content on this website is provided for general information
+            purposes only and does not constitute professional tax,
+            accounting or legal advice.
+        </p>
+
+        <p class="copyright">
+            © 2026 VS Tax Edge Consultancy LLP. All Rights Reserved.
+        </p>
+    </div>
+
+
+</footer>
+
+<script>
+  // Toggle dropdown visibility
+  function toggleBooking() {
+    const dropdown = document.getElementById("bookingDropdown");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+  }
+
+  // WhatsApp integration
+  document.getElementById("bookingForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const service = document.getElementById("service").value;
+    const location = document.getElementById("location").value;
+    const Message = document.getElementById("Message").value;
+    const message =
+ `New Consultation Booking
+
+Name: ${name}
+Date: ${date}
+Time: ${time}
+Location: ${location}
+Message: ${Message}
+Service: ${service}`;
+    const whatsappURL = `https://wa.me/917011490680?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+  });
+</script>
+
+<script>
+function toggleSidebar(item){
+
+    item.classList.toggle("active");
+
+    const allItems =
+        document.querySelectorAll(".sidebar-item");
+
+    allItems.forEach(function(el){
+
+        if(el !== item){
+            el.classList.remove("active");
+        }
+
+    });
+
+}
+</script>
+
+<script>
+
+function toggleSidebar(item){
+
+    item.classList.toggle("active");
+
+    document.querySelectorAll(".sidebar-item").forEach(function(el){
+
+        if(el !== item){
+            el.classList.remove("active");
+        }
+
+    });
+
+}
+
+function toggleMobileSidebar(){
+
+    document
+        .querySelector(".left-sidebar")
+        .classList
+        .toggle("show");
+
+}
+
+</script>
+ <script>
+
+function openPopup(title, text){
+
+    document.getElementById("popupTitle").innerText = title;
+    document.getElementById("popupText").innerText = text;
+
+    document.getElementById("popupModal").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("popupModal").style.display = "none";
+}
+
+window.onclick = function(event){
+
+    let modal = document.getElementById("popupModal");
+
+    if(event.target == modal){
+        closePopup();
+    }
+
+}
+
+</script>
+
+<script>
+
+window.onload = function(){
+
+    const text =
+    "GST • Income Tax • Accounting • Litigation Compliance ";
+
+    const animatedText =
+    document.getElementById("animatedText");
+
+    let index = 0;
+    let deleting = false;
+
+    function animateText(){
+
+        if(!deleting){
+
+            animatedText.textContent =
+            text.substring(0,index);
+
+            index++;
+
+            if(index > text.length){
+
+                deleting = true;
+
+                setTimeout(animateText,2000);
+                return;
+            }
+
+        }else{
+
+            animatedText.textContent =
+            text.substring(0,index);
+
+            index--;
+
+            if(index < 0){
+
+                deleting = false;
+                index = 0;
+            }
+        }
+
+        setTimeout(
+            animateText,
+            deleting ? 40 : 80
+        );
+    }
+
+    animateText();
+
+}
+
+</script>
+
+
+<!-- Media Gallery -->
+
+<div id="galleryModal" class="modal">
+
+<div class="modal-content" style="max-width:1000px;">
+
+<span class="close-btn" onclick="closeGallery()">&times;</span>
+
+<h2>📸 VS Tax Edge Media Gallery</h2>
+
+<div class="gallery-tabs">
+
+<button class="tab-btn active" onclick="openTab(event,'photos')">
+📸 Photos
+</button>
+
+<button class="tab-btn" onclick="openTab(event,'videos')">
+🎥 Videos
+</button>
+
+<button class="tab-btn" onclick="openTab(event,'gst')">
+📄 GST Updates
+</button>
+
+<button class="tab-btn" onclick="openTab(event,'stories')">
+🏆 Success Stories
+</button>
+
+<button class="tab-btn" onclick="openTab(event,'knowledge')">
+📚 Knowledge Center
+</button>
+
+</div>
+
+<!-- Photos -->
+
+<div id="photos" class="tab-content active">
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="logo.jpg" alt="Logo" onclick="showImage(this.src)">
+<p>VS Tax Edge Logo</p>
+</div>
+
+<div class="gallery-item">
+<img src="p1.jpg" alt="Photo 1" onclick="showImage(this.src)">
+<p> 1</p>
+</div>
+
+<div class="gallery-item">
+<img src="p2.jpg" alt="Photo 2" onclick="showImage(this.src)">
+<p> 2</p>
+</div>
+<div class="gallery-item">
+<img src="header-background.jpg" alt="Photo 1" onclick="showImage(this.src)">
+<p>3</p>
+</div>
+
+<div class="gallery-item">
+<img src="p3.jpg" alt="Photo 2" onclick="showImage(this.src)">
+<p> 4</p>
+</div>
+
+<div class="gallery-item">
+<img src="p4.jpg" alt="Photo 2" onclick="showImage(this.src)">
+<p> 5</p>
+</div>
+</div>
+
+</div>
+
+<!-- Videos -->
+
+<div id="videos" class="tab-content">
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+
+.youtube.com/embed/66JFfOBm7Z"
+allowfullscreen>
+</iframe>
+
+<p>GST Guidance Video</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- GST -->
+
+<div id="gst" class="tab-content">
+
+<h3>📄 Latest GST Updates</h3>
+
+<p>1. GST Return Due Dates</p>
+<p>2. GST Registration Updates</p>
+<p>3. Compliance Notifications</p>
+<p>4. Department Circulars</p>
+
+</div>
+
+<!-- Stories -->
+
+<div id="stories" class="tab-content">
+
+<h3>🏆 Client Success Stories</h3>
+
+<p>
+Successfully assisted businesses in GST,
+Income Tax, Accounting and Compliance Management.
+</p>
+
+</div>
+
+<!-- Knowledge -->
+
+<div id="knowledge" class="tab-content">
+
+<h3>📚 Knowledge Center</h3>
+
+<p>📘 Income Tax Guide</p>
+<p>📘 GST Registration Guide</p>
+<p>📘 TDS Filing Guide</p>
+<p>📘 Business Compliance Articles</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Full Screen Image -->
+
+<div id="imageModal"
+class="imageModal"
+onclick="closeImage()">
+
+<img id="modalImage">
+
+</div>
+
+<script>
+
+function openGallery(){
+document.getElementById("galleryModal").style.display="flex";
+}
+
+function closeGallery(){
+document.getElementById("galleryModal").style.display="none";
+}
+
+function openTab(evt,tabName){
+
+let tabcontent =
+document.getElementsByClassName("tab-content");
+
+for(let i=0;i<tabcontent.length;i++){
+tabcontent[i].classList.remove("active");
+}
+
+let tablinks =
+document.getElementsByClassName("tab-btn");
+
+for(let i=0;i<tablinks.length;i++){
+tablinks[i].classList.remove("active");
+}
+
+document.getElementById(tabName)
+.classList.add("active");
+
+evt.currentTarget.classList.add("active");
+
+}
+
+function showImage(src){
+
+document.getElementById("imageModal")
+.style.display="block";
+
+document.getElementById("modalImage")
+.src = src;
+
+}
+
+function closeImage(){
+
+document.getElementById("imageModal")
+.style.display="none";
+
+}
+
+</script>
+
+<script>
+
+function openServicePopup(title, description){
+
+    document.getElementById("serviceTitle").innerHTML = title;
+
+    document.getElementById("serviceDescription").innerHTML = description;
+
+    document.getElementById("servicePopup").style.display = "flex";
+}
+
+function closeServicePopup(){
+
+    document.getElementById("servicePopup").style.display = "none";
+}
+
+window.addEventListener("click", function(event){
+
+    if(event.target ==
+       document.getElementById("servicePopup")){
+
+        closeServicePopup();
+    }
+});
+
+</script>
+<script>
+function goToContact(){
+
+    closeServicePopup();
+
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+</script>
+<script>
+function openConsultation() {
+
+    // Close Service Popup
+    document.getElementById("servicePopup").style.display = "none";
+
+    // Open Booking Form
+    document.getElementById("bookingDropdown").style.display = "block";
+
+    // Scroll to Consultation Form
+    setTimeout(() => {
+        document.getElementById("bookingDropdown").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }, 200);
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const toggle =
+    document.getElementById("menuToggle");
+
+    const navLinks =
+    document.getElementById("navLinks");
+
+    toggle.addEventListener("click", function(){
+
+        navLinks.classList.toggle("active");
+
+        if(navLinks.classList.contains("active")){
+            toggle.innerHTML = "✕";
+        }else{
+            toggle.innerHTML = "☰";
+        }
+
+    });
+
+});
+</script>
+<script>
+function openBookingPopup(){
+    document.getElementById("bookingPopup").style.display = "flex";
+}
+
+function closeBookingPopup(){
+    document.getElementById("bookingPopup").style.display = "none";
+}
+
+window.addEventListener("click", function(e){
+    const popup = document.getElementById("bookingPopup");
+
+    if(e.target === popup){
+        closeBookingPopup();
+    }
+});
+</script>
+</body>
+</html>
