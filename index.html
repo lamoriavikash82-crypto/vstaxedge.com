@@ -2186,6 +2186,164 @@ Learn More
 </section>
 </div>
 </div>
+<!-- Live Comment & 5-Star Rating Section Start -->
+<div class="comment-section" style="max-width: 1300px; margin: 40px auto; padding: 20px 5%;">
+    <h3 style="color: #0f3b6c; font-size: 24px; margin-bottom: 20px; font-weight: 700;"> Client Reviews & Ratings</h3>
+    
+    <!-- Comment & Rating Form -->
+    <div style="background: #ffffff; padding: 25px; border-radius: 8px; box-shadow: 0 10px 30px rgba(15, 59, 108, 0.08); margin-bottom: 30px;">
+        <h4 style="margin-bottom: 15px; color: #2c3e50;">Share Your Experience</h4>
+        <form id="liveCommentForm">
+            <!-- Dynamic Star Selection Area -->
+            <div style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                <span style="font-weight: 600; color: #0f3b6c; font-size: 15px;">Your Rating:</span>
+                <div id="starInputRating" style="display: flex; gap: 5px;">
+                    <span class="star-select" data-value="1" style="font-size: 26px; color: #cbd5e1; cursor: pointer; transition: color 0.2s;">&#9733;</span>
+                    <span class="star-select" data-value="2" style="font-size: 26px; color: #cbd5e1; cursor: pointer; transition: color 0.2s;">&#9733;</span>
+                    <span class="star-select" data-value="3" style="font-size: 26px; color: #cbd5e1; cursor: pointer; transition: color 0.2s;">&#9733;</span>
+                    <span class="star-select" data-value="4" style="font-size: 26px; color: #cbd5e1; cursor: pointer; transition: color 0.2s;">&#9733;</span>
+                    <span class="star-select" data-value="5" style="font-size: 26px; color: #cbd5e1; cursor: pointer; transition: color 0.2s;">&#9733;</span>
+                </div>
+                <input type="hidden" id="selectedRatingValue" value="5"> <!-- Default 5 Star -->
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
+                <input type="text" id="commenterName" placeholder="Your Name" required style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+                <input type="text" id="commenterDesignation" placeholder="Designation (E.g., Business Owner)" style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <textarea id="commentText" rows="4" placeholder="Write your live query, feedback or review here..." required style="width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px;"></textarea>
+            </div>
+            <button type="submit" style="background: #0f3b6c; color: white; border: none; padding: 10px 25px; border-radius: 6px; cursor: pointer; font-weight: 600;">Submit Review</button>
+        </form>
+    </div>
+
+    <!-- Reviews Display Container -->
+    <div id="commentsContainer" style="display: flex; flex-direction: column; gap: 15px;">
+        <!-- Live Reviews with stars will appear here dynamically -->
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const stars = document.querySelectorAll(".star-select");
+        const ratingInput = document.getElementById("selectedRatingValue");
+
+        // Set default 5-star view on load
+        highlightStars(5);
+
+        // Star selection logic click and hover animation
+        stars.forEach(star => {
+            star.addEventListener("click", function() {
+                const val = this.getAttribute("data-value");
+                ratingInput.value = val;
+                highlightStars(val);
+            });
+
+            star.addEventListener("mouseover", function() {
+                highlightStars(this.getAttribute("data-value"));
+            });
+
+            star.addEventListener("mouseleave", function() {
+                highlightStars(ratingInput.value);
+            });
+        });
+
+        function highlightStars(val) {
+            stars.forEach(s => {
+                if(s.getAttribute("data-value") <= val) {
+                    s.style.color = "#d4af37"; // Active Gold Star
+                } else {
+                    s.style.color = "#cbd5e1"; // Inactive Gray Star
+                }
+            });
+        }
+
+        // Load pre-existing reviews
+        loadComments();
+
+        // Form Submit Handler
+        document.getElementById("liveCommentForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById("commenterName").value;
+            const designation = document.getElementById("commenterDesignation").value || "Client";
+            const text = document.getElementById("commentText").value;
+            const rating = parseInt(ratingInput.value);
+            const timestamp = new Date().toLocaleString();
+
+            const newComment = { name, designation, text, rating, timestamp };
+
+            let comments = JSON.parse(localStorage.getItem("vstaxComments")) || [];
+            comments.unshift(newComment);
+
+            localStorage.setItem("vstaxComments", JSON.stringify(comments));
+            
+            // Reset form and defaults
+            document.getElementById("liveCommentForm").reset();
+            ratingInput.value = "5";
+            highlightStars(5);
+            loadComments();
+        });
+    });
+
+    function loadComments() {
+        const container = document.getElementById("commentsContainer");
+        let comments = JSON.parse(localStorage.getItem("vstaxComments")) || [];
+        
+        // Initial mock logs for dynamic premium representation
+        if (comments.length === 0) {
+            comments = [
+                {
+                    name: "Rahul Mehta",
+                    designation: "SME Manufacturer",
+                    text: "VS Tax Edge team helped us resolve our complex GSTR-2B mismatch notice within 48 hours. Excellent consultation support!",
+                    rating: 5,
+                    timestamp: "09/10/2026, 4:30:12 PM"
+                },
+                {
+                    name: "Anjali Sharma",
+                    designation: "Startup Founder",
+                    text: "Smooth experience for new GST registration. Hassle-free and very transparent workflow.",
+                    rating: 4,
+                    timestamp: "09/11/2026, 9:15:00 AM"
+                }
+            ];
+            localStorage.setItem("vstaxComments", JSON.stringify(comments));
+        }
+
+        container.innerHTML = "";
+
+        comments.forEach(c => {
+            const commentCard = document.createElement("div");
+            commentCard.style.cssText = "background: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid #d4af37; box-shadow: 0 4px 10px rgba(0,0,0,0.02);";
+            
+            // Generate dynamic gold/gray star templates matching input logic
+            let starHTML = "";
+            for (let i = 1; i <= 5; i++) {
+                if (i <= c.rating) {
+                    starHTML += '<span style="color: #d4af37; font-size: 18px;">&#9733;</span>';
+                } else {
+                    starHTML += '<span style="color: #cbd5e1; font-size: 18px;">&#9733;</span>';
+                }
+            }
+
+            commentCard.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
+                    <div>
+                        <strong style="color: #0f3b6c; font-size: 16px;">${c.name}</strong> 
+                        <span style="font-size: 13px; color: #7f8c8d; margin-left: 5px;">(${c.designation})</span>
+                        <div style="margin-top: 4px; display: flex; gap: 2px;">${starHTML}</div>
+                    </div>
+                    <span style="font-size: 12px; color: #94a3b8;">${c.timestamp}</span>
+                </div>
+                <p style="color: #334155; font-size: 14.5px; white-space: pre-line;">${c.text}</p>
+            `;
+            container.appendChild(commentCard);
+        });
+    }
+</script>
+<!-- Live Comment & 5-Star Rating Section End -->
 
 <div id="servicePopup" class="service-popup">
     <div class="service-popup-content">
